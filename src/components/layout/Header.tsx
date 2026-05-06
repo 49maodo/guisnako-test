@@ -5,9 +5,9 @@ import { Link } from "react-router-dom"
 
 function Header() {
   return (
-    <header className="sticky top-0 z-50">
+    <header className="sticky top-0 z-50 text-xs">
         <div className="bg-muted">
-      <div className="py-4 container mx-auto">
+      <div className="py-1 container mx-auto">
         <div className="flex flex-col items-center justify-between gap-2 md:flex-row">
             <div className="flex items-center gap-2">
             <div className="flex items-center gap-2">

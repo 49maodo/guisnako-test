@@ -9,7 +9,6 @@ import type { LostItem } from "./LostItemCard";
     location: "Trouvé Police de Dieuppeul, Dakar",
     date: "Il y a 2h",
     ref: "ID: ****8921",
-    link: "#",
   },
   {
     id: 2,
@@ -18,7 +17,6 @@ import type { LostItem } from "./LostItemCard";
     location: "Trouvé Aéroport AIBD",
     date: "Hier",
     ref: "SN: ****KL90",
-    link: "#",
   },
   {
     id: 3,
@@ -27,7 +25,6 @@ import type { LostItem } from "./LostItemCard";
     location: "Trouvé Parking LSS, Parcelles",
     date: "Le 10/05",
     ref: "VIN: ****5678",
-    link: "#",
   },
   {
     id: 4,
@@ -36,7 +33,6 @@ import type { LostItem } from "./LostItemCard";
     location: "Trouvé Centre-ville, Thiès",
     date: "Le 09/05",
     ref: "PC: ****2231",
-    link: "#",
   },
 ];
 

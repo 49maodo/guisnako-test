@@ -11,7 +11,6 @@ export const products: Product[] = [
     price: "10 200 F",
     image:
       "https://images.unsplash.com/photo-1523275335684-37898b6baf30",
-    link: "#",
   },
   {
     id: 2,
@@ -19,7 +18,6 @@ export const products: Product[] = [
     description: "Ultrabook performant avec puce Apple M2.",
     price: "500 000 F",
     image: "https://dicorpsas.com/amnafi/public/assets/pc-01.jpg",
-    link: "#",
   },
   {
     id: 3,
@@ -27,7 +25,6 @@ export const products: Product[] = [
     description: "Caméra de sécurité intégrée dans une ampoule.",
     price: "10 200 F",
     image: "https://dicorpsas.com/amnafi/public/assets/camera-sur.jpg",
-    link: "#",
   },
   {
     id: 4,
@@ -36,7 +33,6 @@ export const products: Product[] = [
     price: "15 000 F",
     image:
       "https://images.unsplash.com/photo-1505740420928-5e560c06d30e",
-    link: "#",
   },
 ];
 

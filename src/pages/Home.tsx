@@ -25,7 +25,7 @@ function Home() {
         <img className="justify-content align-middle" src="guisnako_logo.jpg" 
         alt="Guisnaako Logo" width={200} />
         <h2>Bienvenue sur Guisnaako</h2>
-        <InputGroup>
+        <InputGroup className="h-10 border">
           <InputGroupAddon>
             <Search />
           </InputGroupAddon>
@@ -38,17 +38,18 @@ function Home() {
         </InputGroup>
         <div className="flex gap-2">
           <RadioGroup className="flex gap-5" defaultValue="P" onValueChange={(value) => setTypeQuery(value as "P" | "S" | "L") }>
+          
           <div className="flex items-center gap-3">
-            <RadioGroupItem value="P" id="P" />
-            <Label htmlFor="P">Produit</Label>
+            <RadioGroupItem value="L" id="L" />
+            <Label htmlFor="L">Perdus</Label>
           </div>
           <div className="flex items-center gap-3">
             <RadioGroupItem value="S" id="S" />
             <Label htmlFor="S">Services</Label>
           </div>
           <div className="flex items-center gap-3">
-            <RadioGroupItem value="L" id="L" />
-            <Label htmlFor="L">Perdus</Label>
+            <RadioGroupItem value="P" id="P" />
+            <Label htmlFor="P">Produit</Label>
           </div>
         </RadioGroup>
         </div>

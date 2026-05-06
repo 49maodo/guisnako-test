@@ -5,7 +5,6 @@ export type LostItem = {
     location: string;
     date: string;
     ref: string;
-    link: string;
   };
 
   // eslint-disable-next-line react-refresh/only-export-components
@@ -18,6 +17,7 @@ export type LostItem = {
 
   import { Card, CardContent, CardFooter } from "@/components/ui/card";
   import { Badge } from "@/components/ui/badge";
+import { Link } from "react-router-dom";
 
   
   type Props = {
@@ -44,12 +44,12 @@ export type LostItem = {
             {item.ref}
           </span>
   
-          <a
-            href={item.link}
+          <Link
+            to={`/lost-item-detail/${item.id}`}
             className="text-sm font-semibold text-primary hover:underline"
           >
             Détails
-          </a>
+          </Link>
         </CardFooter>
       </Card>
     );

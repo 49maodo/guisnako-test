@@ -1,5 +1,6 @@
 import { Card, CardContent, CardFooter } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
+import { useNavigate } from 'react-router-dom';
 
 export type Product = {
     id: number;
@@ -7,7 +8,6 @@ export type Product = {
     description: string;
     price: string;
     image: string;
-    link: string;
   };
 
 type Props = {
@@ -15,6 +15,7 @@ type Props = {
 };
 
 export function ProductCard({ product }: Props) {
+  const navigate = useNavigate();
   return (
     <Card className="overflow-hidden rounded-2xl shadow-sm hover:shadow-md transition flex flex-col">
       {/* Image */}
@@ -47,10 +48,11 @@ export function ProductCard({ product }: Props) {
         </span>
 
         <Button
-          asChild
-          className="rounded-full px-4"
+          
+          className="rounded-md px-4"
+          onClick={() => navigate(`/product-item-detail/${product.id}`)}
         >
-          <a href={product.link}>Voir plus</a>
+          Voir plus
         </Button>
       </CardFooter>
     </Card>
