@@ -5,7 +5,7 @@ import { ProductGallery } from "./Productgallery";
 import { ProductInfo } from "./Productinfo";
 import { ProductTabs } from "./Producttabs";
 import { RelatedProducts } from "./Relatedproducts";
-import type { Product } from "@/Types/product";
+import type { Product } from "@/Types/Product";
 
 
 const DEMO_PRODUCT: Product = {

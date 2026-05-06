@@ -1,5 +1,5 @@
 import { cn } from "@/lib/utils";
-import type { ProductVariant } from "@/Types/product";
+import type { ProductVariant } from "@/Types/Product";
 
 interface VariantSelectorProps {
   label: string;

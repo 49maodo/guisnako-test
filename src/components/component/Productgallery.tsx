@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { ChevronLeft, ChevronRight, ZoomIn } from "lucide-react";
 import { cn } from "@/lib/utils";
-import type { ProductImage } from "@/Types/product";
+import type { ProductImage } from "@/Types/Product";
 
 
 interface ProductGalleryProps {

@@ -2,7 +2,7 @@ import { useState } from "react";
 import { ShoppingCart, Heart, Share2, ShieldCheck, Truck, RotateCcw } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
-import type { Product } from "@/Types/product";
+import type { Product } from "@/Types/Product";
 import { ProductBadge } from "./ProductBadge";
 import { StarRating } from "./StarRating";
 import { VariantSelector } from "./Variantselector";

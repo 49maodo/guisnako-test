@@ -4,7 +4,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
-import type { Product } from "@/Types/product";
+import type { Product } from "@/Types/Product";
 import { StarRating } from "./StarRating";
 
 interface ProductTabsProps {

@@ -1,6 +1,6 @@
 import { ShoppingCart, Heart } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import type { RelatedProduct } from "@/Types/product";
+import type { RelatedProduct } from "@/Types/Product";
 import { ProductBadge } from "./ProductBadge";
 import { StarRating } from "./StarRating";
 
