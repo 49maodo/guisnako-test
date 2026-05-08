@@ -30,7 +30,7 @@ export function StorePage()  {
  
       {/* Avatar / cover */}
       <Card className="border-border/60 overflow-hidden">
-        <div className="h-24 bg-gradient-to-r from-violet-500/20 to-blue-500/20 relative">
+        <div className="h-24 bg-linear-to-r from-violet-500/20 to-blue-500/20 relative">
           <button className="absolute top-2 right-2 p-1.5 rounded-lg bg-background/80 hover:bg-background text-muted-foreground hover:text-foreground transition-colors">
             <Camera size={14} />
           </button>
@@ -113,7 +113,7 @@ export function StorePage()  {
               value={store.description}
               onChange={(e) => setStore({ ...store, description: e.target.value })}
               placeholder="Décrivez votre boutique en quelques mots..."
-              className="resize-none min-h-[90px]"
+              className="resize-none min-h-22.5"
             />
           </div>
  

@@ -265,6 +265,7 @@ export default function OrderPage() {
                                                 </Button>
                                             </DropdownMenuTrigger>
                                             <DropdownMenuContent align="end" className="w-48">
+                                                {/* eslint-disable-next-line @typescript-eslint/no-explicit-any */}
                                                 <DropdownMenuItem className="gap-2" onClick={() => { setSelectedOrder(order as any); setDetailOpen(true); }}>
                                                     <Eye size={13} /> Voir les détails
                                                 </DropdownMenuItem>
@@ -364,6 +365,7 @@ function OrderDetailDialog({ order, open, onClose, onStatusChange } : { order: a
             <div>
               <p className="text-xs text-muted-foreground font-medium uppercase tracking-wide mb-3">Articles</p>
               <div className="space-y-2">
+                 {/* eslint-disable-next-line @typescript-eslint/no-explicit-any */}
                 {order.items.map((item: any, i: number) => (
                   <div key={i} className="flex items-center justify-between p-3 rounded-xl bg-muted/40">
                     <div className="flex items-center gap-3">

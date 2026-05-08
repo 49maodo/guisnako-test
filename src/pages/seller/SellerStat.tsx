@@ -16,7 +16,7 @@ import {
   ChevronRight,
 } from "lucide-react";
 
-const fmt = (n) => new Intl.NumberFormat("fr-SN").format(n) + " F";
+const fmt = (n: number) => new Intl.NumberFormat("fr-SN").format(n) + " F";
 
 export default function SellerStat() {
   const stats = [
