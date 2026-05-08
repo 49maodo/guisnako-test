@@ -22,38 +22,38 @@ function Home() {
 
   return (
     <div className="flex flex-col max-w-3xl mx-auto items-center justify-center gap-4 mt-4">
-        <img className="justify-content align-middle" src="guisnako_logo.jpg" 
+      <img className="justify-content align-middle" src="guisnako_logo.jpg"
         alt="Guisnaako Logo" width={200} />
-        <h2>Bienvenue sur Guisnaako</h2>
-        <InputGroup className="h-12 border">
-          <InputGroupAddon>
-            <Search />
-          </InputGroupAddon>
-          <InputGroupInput
-            placeholder="Rechercher..."
-            value={searchQuery}
-            required
-            onChange={(e) => setSearchQuery(e.target.value)}
-          />
-        </InputGroup>
-        <div className="flex gap-2">
-          <RadioGroup className="flex gap-5" defaultValue="P" onValueChange={(value) => setTypeQuery(value as "P" | "S" | "L") }>
-          
-          <div className="flex items-center gap-3">
+      <h2>Bienvenue sur Guisnaako</h2>
+      <InputGroup className="h-12 border-primary/25 focus-within:border-primary transition-colors">
+        <InputGroupAddon>
+          <Search />
+        </InputGroupAddon>
+        <InputGroupInput
+          placeholder="Rechercher..."
+          value={searchQuery}
+          required
+          onChange={(e) => setSearchQuery(e.target.value)}
+        />
+      </InputGroup>
+      <div className="flex gap-2">
+        <RadioGroup className="flex gap-5" defaultValue="P" onValueChange={(value) => setTypeQuery(value as "P" | "S" | "L")}>
+
+          <div className="flex items-center gap-1">
             <RadioGroupItem value="L" id="L" />
             <Label htmlFor="L">Perdus</Label>
           </div>
-          <div className="flex items-center gap-3">
-            <RadioGroupItem value="S" id="S" />
+          <div className="flex items-center gap-1">
+            <RadioGroupItem className="text-bold" value="S" id="S" />
             <Label htmlFor="S">Services</Label>
           </div>
-          <div className="flex items-center gap-3">
+          <div className="flex items-center gap-1">
             <RadioGroupItem value="P" id="P" />
             <Label htmlFor="P">Produit</Label>
           </div>
         </RadioGroup>
-        </div>
-        <Button size="lg" className="w-sm" onClick={handleSearch}>Rechercher</Button>
+      </div>
+      <Button size="lg" className="w-sm" onClick={handleSearch}>Rechercher</Button>
     </div>
   )
 }

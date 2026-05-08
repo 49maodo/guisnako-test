@@ -10,10 +10,10 @@ import {
 } from "lucide-react";
 
 import { cn } from "@/lib/utils";
-import {
-  NavigationMenu, NavigationMenuContent, NavigationMenuItem,
-  NavigationMenuList, NavigationMenuTrigger,
-} from "@/components/ui/navigation-menu";
+// import {
+//   NavigationMenu, NavigationMenuContent, NavigationMenuItem,
+//   NavigationMenuList, NavigationMenuTrigger,
+// } from "@/components/ui/navigation-menu";
 import {
   DropdownMenu, DropdownMenuContent, DropdownMenuItem,
   DropdownMenuLabel, DropdownMenuSeparator, DropdownMenuTrigger,
@@ -441,38 +441,38 @@ function SimpleDropdown({
   );
 }
 
-function MegaMenu() {
-  return (
-    <NavigationMenu>
-      <NavigationMenuList>
-        <NavigationMenuItem>
-          <NavigationMenuTrigger className="h-auto px-3 py-3 text-sm font-medium text-muted-foreground rounded-lg bg-transparent hover:bg-muted hover:text-foreground data-[state=open]:bg-muted data-[state=open]:text-foreground whitespace-nowrap">
-            Catégories
-          </NavigationMenuTrigger>
-          <NavigationMenuContent>
-            <div className="grid grid-cols-3 gap-0 w-135 xl:w-150 p-2 rounded-xl">
-              {CATEGORIES.map((col, colIdx) => (
-                <div key={col.label}
-                  className={cn("p-2", colIdx < CATEGORIES.length - 1 && "border-r border-border")}>
-                  <p className="text-[10px] font-semibold uppercase tracking-widest text-muted-foreground px-2 pb-1 pt-1">
-                    {col.label}
-                  </p>
-                  {col.items.map((item) => (
-                    <Link key={item.label} to={item.href}
-                      className="flex items-center gap-2 px-2 py-2 rounded-lg text-sm text-foreground hover:bg-muted transition-colors">
-                      <span className="text-primary shrink-0">{item.icon}</span>
-                      {item.label}
-                    </Link>
-                  ))}
-                </div>
-              ))}
-            </div>
-          </NavigationMenuContent>
-        </NavigationMenuItem>
-      </NavigationMenuList>
-    </NavigationMenu>
-  );
-}
+// function MegaMenu() {
+//   return (
+//     <NavigationMenu>
+//       <NavigationMenuList>
+//         <NavigationMenuItem>
+//           <NavigationMenuTrigger className="h-auto px-3 py-3 text-sm font-medium text-muted-foreground rounded-lg bg-transparent hover:bg-muted hover:text-foreground data-[state=open]:bg-muted data-[state=open]:text-foreground whitespace-nowrap">
+//             Catégories
+//           </NavigationMenuTrigger>
+//           <NavigationMenuContent>
+//             <div className="grid grid-cols-3 gap-0 w-135 xl:w-150 p-2 rounded-xl">
+//               {CATEGORIES.map((col, colIdx) => (
+//                 <div key={col.label}
+//                   className={cn("p-2", colIdx < CATEGORIES.length - 1 && "border-r border-border")}>
+//                   <p className="text-[10px] font-semibold uppercase tracking-widest text-muted-foreground px-2 pb-1 pt-1">
+//                     {col.label}
+//                   </p>
+//                   {col.items.map((item) => (
+//                     <Link key={item.label} to={item.href}
+//                       className="flex items-center gap-2 px-2 py-2 rounded-lg text-sm text-foreground hover:bg-muted transition-colors">
+//                       <span className="text-primary shrink-0">{item.icon}</span>
+//                       {item.label}
+//                     </Link>
+//                   ))}
+//                 </div>
+//               ))}
+//             </div>
+//           </NavigationMenuContent>
+//         </NavigationMenuItem>
+//       </NavigationMenuList>
+//     </NavigationMenu>
+//   );
+// }
 
 export function Navbar() {
   const cartCount = INITIAL_CART.reduce((s, i) => s + i.qty, 0);
@@ -533,7 +533,7 @@ export function Navbar() {
             items={BOUTIQUE_ITEMS}
             hasSeparator
           />
-          <MegaMenu />
+          {/* <MegaMenu /> */}
           <div className="flex-1" />
           <Link to="/new"
             className="px-3 py-3 text-sm font-medium text-muted-foreground rounded-lg hover:bg-muted hover:text-foreground transition-colors whitespace-nowrap">

@@ -24,6 +24,11 @@ const PageRouter = () => {
       <Router>
         <div className="min-h-screen">
           <Routes>
+            <Route path="*" element={
+              <LayoutGuest>
+                <Home />
+              </LayoutGuest>
+            } />
             <Route path="/" element={
               <LayoutGuest>
                 <Home />

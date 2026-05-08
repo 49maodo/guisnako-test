@@ -8,8 +8,8 @@ export function SellerLayout({ children }: { children: React.ReactNode }) {
       <div className="flex min-h-screen w-full">
         <SellerSidebar />
         <main className="flex-1 px-6 mb-6">
-          <div className="sticky top-0 flex shrink-0 items-center justify-start gap-4 border-b py-2">
-          <SidebarTrigger variant={"default"} />
+          <div className="sticky top-0 flex shrink-0 items-center justify-start gap-4 py-2">
+          <SidebarTrigger size={"icon-lg"} variant={"outline"} />
           </div>
           {children}
         </main>
