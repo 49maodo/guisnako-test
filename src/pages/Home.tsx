@@ -53,7 +53,7 @@ function Home() {
           </div>
         </RadioGroup>
         </div>
-        <Button onClick={handleSearch}>Rechercher</Button>
+        <Button size="lg" onClick={handleSearch}>Rechercher</Button>
     </div>
   )
 }

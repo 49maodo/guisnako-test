@@ -13,26 +13,13 @@ import {
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { toast } from "sonner";
+import { LoginSchema } from "@/lib/form-schema";
 
-export interface ActionResponse<T> {
-  success: boolean;
-  message: string;
-  errors?: {
-    [K in keyof T]?: string[];
-  };
-  inputs?: T;
-}
-const formSchema = z.object({
-  email: z.email({ error: "Please enter a valid email" }),
-  password: z.string({ error: "This field is required" }),
-});
-
-
-type Schema = z.infer<typeof formSchema>;
+type Schema = z.infer<typeof LoginSchema>;
 
 export function LoginForm() {
   const form = useForm<Schema>({
-    resolver: zodResolver(formSchema),
+    resolver: zodResolver(LoginSchema),
   });
   const {
     formState: { isSubmitting },

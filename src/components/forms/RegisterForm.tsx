@@ -66,8 +66,8 @@ export function RegisterForm() {
                                 <FieldLabel htmlFor="categorie">Categorie *</FieldLabel>
 
                                 <Select value={field.value} onValueChange={field.onChange}>
-                                    <SelectTrigger className="w-full">
-                                        <SelectValue placeholder="Choisir" />
+                                    <SelectTrigger className="w-full" >
+                                        <SelectValue placeholder="Choisir"/>
                                     </SelectTrigger>
                                     <SelectContent>
                                         {options.map((option) => (

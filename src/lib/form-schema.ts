@@ -36,3 +36,8 @@ export const RegisterSchema = z.object({
   password: z.string({ error: "This field is required" }),
   confirmpassword: z.string({ error: "This field is required" }),
 });
+
+export const LoginSchema = z.object({
+  email: z.email({ error: "Please enter a valid email" }),
+  password: z.string({ error: "This field is required" }),
+});
