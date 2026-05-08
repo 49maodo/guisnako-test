@@ -25,7 +25,7 @@ function Home() {
         <img className="justify-content align-middle" src="guisnako_logo.jpg" 
         alt="Guisnaako Logo" width={200} />
         <h2>Bienvenue sur Guisnaako</h2>
-        <InputGroup className="h-10 border">
+        <InputGroup className="h-12 border">
           <InputGroupAddon>
             <Search />
           </InputGroupAddon>
@@ -53,7 +53,7 @@ function Home() {
           </div>
         </RadioGroup>
         </div>
-        <Button size="lg" onClick={handleSearch}>Rechercher</Button>
+        <Button size="lg" className="w-sm" onClick={handleSearch}>Rechercher</Button>
     </div>
   )
 }

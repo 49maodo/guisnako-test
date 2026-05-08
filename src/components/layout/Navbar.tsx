@@ -59,10 +59,9 @@ const HOME_ITEMS: NavLinkItem[] = [
 
 const BOUTIQUE_ITEMS: NavLinkItem[] = [
   { label: "Créer une boutique", href: "#", icon: <Store size={15} />, badge: "Nouveau" },
-  { label: "Tableau de bord", href: "#", icon: <LayoutDashboard size={15} /> },
-  { label: "Mes produits", href: "#", icon: <Package size={15} /> },
-  { label: "Suivi des commandes", href: "#", icon: <FileText size={15} /> },
-  { label: "Paiements", href: "#", icon: <DollarSign size={15} /> },
+  { label: "Tableau de bord", href: "/seller", icon: <LayoutDashboard size={15} /> },
+  { label: "Mes produits", href: "/seller/products", icon: <Package size={15} /> },
+  { label: "Suivi des commandes", href: "/seller/orders", icon: <FileText size={15} /> },
 ];
 
 const CATEGORIES: MegaColumn[] = [
